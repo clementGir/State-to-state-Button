@@ -1,0 +1,215 @@
+body{
+	text-align: center;
+}
+
+.picto {
+  width: 200px;
+  height: 200px;
+  margin: 4em auto;
+  background:#ADF7B6;  
+  border-radius:50%;
+  border: none;
+  padding: 35px;
+}
+
+button:focus {outline:0;}
+
+.picto.open{
+  animation: open 0.5s cubic-bezier(1,.015,.295,1.225) forwards;
+  -webkit-animation: open 0.5s cubic-bezier(1,.015,.295,1.225) forwards;
+}
+
+.close{
+  animation: close 0.5s cubic-bezier(1,.015,.295,1.225) forwards;
+  -webkit-animation: close 0.5s cubic-bezier(1,.015,.295,1.225) forwards;
+}
+
+
+
+@keyframes open{
+  100% {
+    border-radius:4px;
+    background-color: #FFC09F;
+    transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+  }
+}
+
+@-webkit-keyframes open{
+
+  100% {
+    border-radius:4px;
+    background-color: #FFC09F;
+    transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+  }
+}
+
+@keyframes close{
+  0% {
+    border-radius:4px;
+    background-color: #FFC09F;
+    transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+  }
+  100% {
+    border-radius:50%;
+    background:#ADF7B6; 
+    transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+  }
+}
+
+@-webkit-keyframes close{
+  0% {
+    border-radius:4px;
+    background-color: #FFC09F;
+    transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+  }
+  100% {
+    border-radius:50%;
+    background:#ADF7B6; 
+    transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+  }
+}
+
+
+.design {
+width: 130px;
+height: 130px;
+padding-top: 60px;
+}
+
+
+.logo {
+width: 130px;
+height: 10px;
+background-color: white;
+border-radius: 5px;
+position: absolute;
+}
+
+.logo:last-child{
+  transform: rotate(90deg);
+  -webkit-transform:rotate(90deg);
+  -ms-transform:rotate(90deg);
+}
+
+.open .logo{
+	animation: rotate 0.5s cubic-bezier(1,.015,.295,1.225) forwards;
+	-webkit-animation: rotate 0.5s cubic-bezier(1,.015,.295,1.225) forwards;
+}
+
+.open .logo:last-child{
+  animation: rotateLess 0.5s cubic-bezier(1,.015,.295,1.225) forwards;
+-webkit-animation: rotateLess 0.5s cubic-bezier(1,.015,.295,1.225) forwards;
+}
+
+@keyframes rotate{
+  100% {
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+  }
+}
+
+@-webkit-keyframes rotate{
+
+  100% {
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+  }
+}
+
+@keyframes rotateLess{
+  100% {
+    transform:rotate(135deg);
+    -webkit-transform:rotate(135deg);
+    -ms-transform:rotate(135deg);
+  }
+}
+
+@-webkit-keyframes rotateLess{
+
+  100% {
+    transform:rotate(135deg);
+    -webkit-transform:rotate(135deg);
+    -ms-transform:rotate(135deg);
+  }
+}
+
+
+
+.close .logo{
+	animation: rotateBack 0.5s cubic-bezier(1,.015,.295,1.225) forwards;
+	-webkit-animation: rotateBack 0.5s cubic-bezier(1,.015,.295,1.225) forwards;
+}
+
+.close .logo:last-child{
+  animation: rotateLessBack 0.5s cubic-bezier(1,.015,.295,1.225) forwards;
+  -webkit-animation: rotateLessBack 0.5s cubic-bezier(1,.015,.295,1.225) forwards;
+}
+
+@keyframes rotateBack{
+  0% {
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+  }
+  100% {
+    transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+  }
+}
+
+@-webkit-keyframes rotateBack{
+  0% {
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+  }
+  100% {
+    transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+  }
+}
+
+@keyframes rotateLessBack{
+  0% {
+    transform:rotate(135deg);
+    -webkit-transform:rotate(135deg);
+    -ms-transform:rotate(135deg);
+  }
+  100% {
+    transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+  }
+}
+
+@-webkit-keyframes rotateLessBack{
+  0% {
+    transform:rotate(135deg);
+    -webkit-transform:rotate(135deg);
+    -ms-transform:rotate(135deg);
+  }
+  100% {
+    transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+  }
+}
+
+
+
